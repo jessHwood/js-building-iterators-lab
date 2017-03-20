@@ -1,10 +1,19 @@
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce for more details
 // Don't worry about initialValue at first. You can always add it in later.
 
-function myReduce(arr, callback) {
+function myReduce(array, callback) {
 
-//  CODE INSIDE HERE   //
+for (var i = 0; i < array.length; i++) {
+	callback (array[i], i, array);
+}
+    array.push(callback);
 
+    if(number % 2 == 0) {
+       
+        array.push(callback);
+    }
+
+    return array; 
 }
 
 /*
