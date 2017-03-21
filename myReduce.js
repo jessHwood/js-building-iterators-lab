@@ -2,19 +2,16 @@
 // Don't worry about initialValue at first. You can always add it in later.
 
 function myReduce(array, callback) {
-
+	var initialValue = "";
 for (var i = 0; i < array.length; i++) {
-	callback (array[i], i, array);
+	callback (acc, array[i], i, array);
+	initialValue += array[i];
+	}
+	return initialValue;
 }
-    array.push(callback);
 
-    if(number % 2 == 0) {
-       
-        array.push(callback);
-    }
 
-    return array; 
-}
+
 
 /*
  Best if you don't code out here.
